@@ -21,4 +21,8 @@ is a comment, uncomment."
 (global-set-key [(meta /)] 'comment-or-uncomment-region-or-line)
 (global-set-key [(meta \\)] 'hippie-expand)
 
-;(global-auto-revert t)
+(add-to-list 'load-path (concat dotfiles-dir "/vendor/jump.el"))
+(add-to-list 'load-path (concat dotfiles-dir "/vendor/rinari"))
+(require 'rinari)
+
+(global-auto-revert-mode)
