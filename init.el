@@ -57,5 +57,8 @@
 (if (file-exists-p system-specific-config) (load system-specific-config))
 (if (file-exists-p user-specific-config) (load user-specific-config))
 
+;(set-face-attribute 'default nil
+;                    :family "Inconsolata-dz" :height 145 :weight 'normal)
+
 (provide 'init)
 ;;; init.el ends here
